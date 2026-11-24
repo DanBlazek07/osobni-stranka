@@ -9,16 +9,22 @@ img {
 
 body {
     margin: 0;
-    overflow-x: hidden;
+    background-color: var(--bg-color, white);
+    color: var(--text-color, black);
 }
 nav {
     display: flex;
     flex-direction: column;
+    background-color: var(--nav-color,lightgray);
 }
 
 main {
     width: 100%;
     padding: 10px;
+}
+
+a {
+    color: var(--link-color);
 }
 @media (min-width: 40em) {
 nav {
@@ -50,7 +56,10 @@ nav {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    /* TODO */
+        --bg-color: #222222;
+        --text-color: #ffffff;
+        --nav-color: #333333;
+        --link-color: #80bfff;
   }
 }
 
