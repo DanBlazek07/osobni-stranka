@@ -1,13 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    width: 100%;
+    padding: 10px;
+}
 @media (min-width: 40em) {
-  /* TODO */
+nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 }
 
 @media (min-width: 60em) {
-  /* TODO */
+  main {
+        width: 90%;
+        margin: auto;
+    }
+
+    nav {
+        justify-content: space-around;
+    }
 }
 
 @media (min-width: 80em) {
-  /* TODO */
+  main {
+        max-width: 1200px;
+    }
+
+    nav {
+        flex-wrap: nowrap;
+    }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -30,4 +68,7 @@
 
 @media (forced-colors: active) {
   /* TODO */
+}
+.skiplink:focus-visible{
+
 }
